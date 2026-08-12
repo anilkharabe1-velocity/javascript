@@ -20,10 +20,15 @@
 const custumPromise = new Promise((resolve, reject)=>{
     setTimeout(()=>{
         const user ={
-            is:1,
+            id:1,
             name:"Rahul"
         }
-        reject("some error")
+        if(user.id == 1){
+            resolve(user)
+        }else{
+            reject("user not found")
+        }
+        
     }, 2000)
 });
 
