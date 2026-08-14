@@ -32,34 +32,14 @@ function task3(input){
     })
 }
 
-let input = 5;
-
-task1(input)
-    .then((response1)=>{
-        return task2(response1)
-    })
-    .then((response2)=>{
-        return task3(response2)
-    })
-    .then((response3)=>{
-    })
-    .catch((error)=>{
+async function chaining(str){
+    try {
+        const response1 = await task1(str);
+        const response2 = await task2(response1);
+        const response3 = await task3(response2);
+    } catch (error) {
         console.log("error:", error)
-    })
+    }
+}
 
-
-// not recommended code
-// task1("how are you!!")
-//     .then((res1)=>{
-//         console.log("response1:", res1);
-//         task2(res1)
-//             .then((response2)=>{
-//                 console.log("response2", response2)
-//                 task3(response2)
-//                     .then((response3)=>{
-//                         console.log("response3", response3)
-//                     })
-//             })
-//     })
-
-
+chaining("how are you!!!")

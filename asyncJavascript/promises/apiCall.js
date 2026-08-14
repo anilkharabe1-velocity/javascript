@@ -1,9 +1,9 @@
 // fetch => is a method which used to make a api call
 // fetch => return promise
 
-fetch('https://jsonplacehold.typicode.com/todos/56')
+fetch('https://jsonplaceholder.typicode.com/todos/56')
     .then((response)=>{
-        return response.json();
+        return response.json(); // convert buffer stream into json format but it returns promise
     })
     .then((todos)=>{
         console.log("todos", todos)

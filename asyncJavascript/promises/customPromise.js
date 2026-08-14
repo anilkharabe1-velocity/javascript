@@ -43,5 +43,11 @@ custumPromise
         console.log("error", error)
     })
 
+    // fulfill
+    // reject
+    // settled
+    // pending state
+    // fulfilled state
+    // rejected state
 
 
