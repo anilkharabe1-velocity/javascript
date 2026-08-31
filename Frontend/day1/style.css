@@ -1,0 +1,19 @@
+h2{
+    color: green;
+}
+h3{
+    background-color: cadetblue;
+}
+
+h4{
+    background: rgb(34, 34, 67);
+}
+
+li{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h1{
+    text-align: center;
+}
