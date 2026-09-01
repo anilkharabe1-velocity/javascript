@@ -1,0 +1,48 @@
+body{
+    background-color: #d9d8d8;
+    margin: 0;
+}
+
+.header{
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.profile{
+    background-color: #fff;
+    text-align: center;
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #000;
+}
+
+.profile img{
+    width: 100%;
+}
+
+.skills{
+    background-color: #e9e8e6;
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.project{
+    background-color: #e2deb3;
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.contact{
+     background-color: #b3f1d4;
+    width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid black;
+}
