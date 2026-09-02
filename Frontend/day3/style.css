@@ -1,0 +1,25 @@
+.important{
+    color: blueviolet
+}
+
+.normal{
+    color: aquamarine;
+}
+
+.title{
+    color: blue;
+}
+
+/* group selector */
+h1, h3, p{
+    color: chocolate;
+}
+
+/* Descendant Selector */
+.subCard > p, .subCard > h2{
+    color: rgb(208, 13, 13);
+}
+
+table, th, td {
+  border: 1px solid black;
+}

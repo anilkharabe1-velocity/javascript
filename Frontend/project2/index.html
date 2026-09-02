@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+
+        <form>
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Age -->
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age" placeholder="Enter your age">
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" name="dob" placeholder="Select your Date of Birth" required>
+            </div>
+
+            <!-- Gender -->
+
+            <div class="form-group">
+                <p>Gender</p>
+                <label ><input class="gender-input" type="radio" name="gender" value="male">Male</label> <br>
+                <label ><input class="gender-input" type="radio" name="gender" value="female">Female</label><br>
+            </div>
+            <!-- Skills -->
+            <div class="form-group">
+                <p>Skills</p>
+                <label><input class="skill-selector"  type="checkbox" name="skills" value="html">HTML</label> <br>
+                <label><input  class="skill-selector"   type="checkbox" name="skills" value="css">CSS</label><br>
+                <label><input  class="skill-selector"   type="checkbox" name="skills" value="javascript">Javascript</label><br>
+            </div>
+
+            <!-- Course -->
+            <div class="form-group">
+                <label for="course">Select Course</label>
+
+                <select name="courseData" id="course">
+                    <option value="frontend">Frontend Development</option>
+                    <option value="backend">Backend Development</option>
+                    <option value="fullstack">FullStack Development</option>
+
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Register
+            </button>
+
+        </form>
+    </div>
+</body>
+
+</html>
