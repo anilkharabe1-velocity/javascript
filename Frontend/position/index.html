@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        Home | About | Contact
+    </div>
+
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+
+    <hr />
+
+    <div class="relative-box">Relative box</div>
+
+    <hr>
+
+    <br>
+    <br>
+
+    <br>
+    <hr>
+
+    <div  class="card">
+        <span class="badge">New</span>
+        <h2>IPhone 18</h2>
+        <p>1,50,000</p>
+    </div>
+
+    <hr>
+
+     <form>
+        <label for="name">Name</label>:<input type="text" name="userName" id="name" placeholder="Enter your name"> <br>
+
+        <label for="email">Email</label>:<input type="email" name="email" id="email" placeholder="Enter Your Email"
+            required> <br>
+        <label for="password">Password</label>:<input type="password" name="password" id="password"
+            placeholder="Enter your password"> <br>
+        Age:<input type="number"> <br>
+        Date:<input type="date"> <br>
+        File:<input type="file"> <br>
+
+        <!-- radio -->
+         <h3>Radio Button</h3>
+        <p>Gender</p>
+        <label><input type="radio" name="gender" value="male">Male</label> <br>
+        <label><input type="radio" name="gender" value="female">Female</label><br>
+        <label><input type="radio" name="gender" value="other">Other</label><br>
+        <br>
+
+        <!-- checkbox -->
+         <h3>Checkbox Button</h3>
+
+        <label><input type="checkbox" name="skills" value="html">HTML</label> <br>
+        <label><input type="checkbox" name="skills" value="css">CSS</label><br>
+        <label><input type="checkbox" name="skills" value="javascript">Javascript</label><br>
+
+        <!-- Dropdown -->
+         <h3>Dropdown</h3>
+
+         <label for="course">Course</label>
+
+         <select name="courseData" id="course">
+            <option value="frontend">Frontend Development</option>
+            <option value="backend">Backend Development</option>
+            <option value="fullstack">FullStack Development</option>
+
+         </select>
+         <br>
+
+         <!-- textarea -->
+          <h3>TextArea</h3>
+            <label for="message">Message</label>:<textarea id="message" rows="5" cols="100"></textarea>
+
+            <br>
+        <button type="submit">Submit</button>
+        <button type="button">Click me</button>
+        <button type="reset">Reset</button>
+    </form>
+    <button class="chat">
+        This is chatting window
+    </button>
+
+
+</body>
+
+</html>

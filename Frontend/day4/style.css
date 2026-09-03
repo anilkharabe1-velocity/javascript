@@ -1,0 +1,59 @@
+.box1{
+    border: 5px solid black;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 50px;
+}
+
+.box2{
+    border: 5px solid black;
+    padding: 10px;
+    margin: 50px;
+    display: inline;
+}
+
+.span-class{
+    border: 1px solid black;
+    display: block;
+}
+
+.box3{
+    border: 5px solid black;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 50px;
+    /* display: none; */
+}
+
+
+/* positions */
+
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.box-1{
+    background-color: red;
+    margin-top: 50px;
+    margin-left: 50px;
+    z-index: 1;
+}
+
+.box-2{
+    background-color: blue;
+    margin-top: 100px;
+    margin-left: 100px;
+    z-index: 5;
+}
+
+.box-3{
+    background-color: rgb(199, 154, 32);
+    margin-top: 150px;
+    margin-left: 150px;
+    z-index: 2;
+}
