@@ -1,0 +1,32 @@
+.container{
+    height: 600px;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+
+    /* align-items: center; */
+    /* align-items: stretch; */
+
+    /* perfect center */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.box{
+    background-color: rgb(225, 129, 129);
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
