@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading">Hello World</h1>
+    <h2 id="heading">Hello World 2</h2>
+
+    <p class="text">One</p>
+    <p class="text">Two</p>
+    <p class="text">Three</p>
+    <p class="text_2">WIthout class name</p>
+
+
+    <script>
+        const heading = document.getElementById("heading");
+        console.log("heading", heading)
+        heading.textContent = "GOod morning"
+
+        // class
+        const elements = document.getElementsByClassName("text")
+        // console.log("elements", elements[0])
+        // console.log("elements", elements[1])
+        for(let element of elements){
+            console.log("element", element)
+        }
+
+        // access using tag
+        const pTagsElements = document.getElementsByTagName("p")
+        for(let element of pTagsElements){
+            console.log("p element", element)
+        }
+
+        // querySelector element
+        const headingUsingQuery = document.querySelector("h2")
+        console.log("headingUsingQuery", headingUsingQuery)
+
+        //querySelector class
+        const text2Class = document.querySelector('.text_2');
+        console.log("text2Class", text2Class)
+
+        // access id
+        const heading_1 = document.querySelector('#heading');
+        console.log("heading_1", heading_1)
+
+        // access group
+
+        const text_group = document.querySelectorAll('.text');
+        for(let element of text_group){
+            console.log("element", element)
+        }
+
+        const p_group = document.querySelectorAll('p');
+        for(let element of p_group){
+            console.log("element", element)
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"><h2 id="heading">This is my secondary HEading</h2></div>
+    <script>
+        const container = document.querySelector('#container');
+
+        const paragraph = document.createElement('p');
+        paragraph.textContent = "Printing using script";
+
+        const heading = document.createElement("h1")
+        heading.textContent = "THis is my heading"
+        container.appendChild(heading)
+        container.appendChild(paragraph)
+
+        const h2_heading = document.querySelector('#heading')
+        h2_heading.remove()
+
+    </script>
+</body>
+</html>

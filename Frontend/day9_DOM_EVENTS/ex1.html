@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="city" id="city">
+        <option>Pune</option>
+        <option>Mumbai</option>
+        <option>Hyderabad</option>
+        <option>Banglore</option>
+    </select>
+        
+    <script>
+        const city = document.querySelector("#city");
+        city.addEventListener("change", (e)=>{
+            console.log("event triggered", e.target.value)
+        })
+    </script>
+</body>
+</html>

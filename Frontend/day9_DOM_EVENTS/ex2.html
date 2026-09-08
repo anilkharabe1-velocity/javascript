@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- event bubbling -->
+    <div id="parent" style="background-color: red;">
+        <button id="child">Click</button>
+    </div>
+
+    <script>
+        const parent = document.querySelector("#parent");
+        parent.addEventListener("click", ()=>{
+            console.log("parent")
+        })
+
+        const child = document.querySelector("#child");
+        child.addEventListener("click", (event)=>{
+            event.stopPropagation()
+            console.log("child")
+        })
+    </script>
+</body>
+</html>
