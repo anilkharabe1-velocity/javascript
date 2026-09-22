@@ -1,60 +1,84 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-// react.createElement => object => HTML Element => render
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, 
-    React.createElement("h1", { id: "heading" }, "Welcome to React"),
-  ),
-);
+/**
+ * Header
+ *  - logo
+ *  - Nav bar
+ *
+ * Body
+ *  - Search
+ *  - RestaurantCainer
+ *      - RestaurantCard
+ *
+ * Footer
+ *  - Copywrite
+ *  - Links
+ *  - Contact
+ *  - address
+ */
 
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img
+          className="logo"
+          src="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-food-logo-png-image_5687686.png"
+        ></img>
+      </div>
 
-console.log("parent", parent); // object
-
-// JSX (transiled before it reaches the JS) -> Babel
-// JSX => react.createElement => JS object =>  HTML Element => render
-const jsxHeading = (<div id='parent'>
-  <div id='child'>
-    <h1 id="heading">React using JSX</h1>
-  </div>
-</div>)
-
-console.log("jsxHeading", jsxHeading);
-
-// component => functional based component & class based component
-// functional based component
-
-const number = 100;
-
-
-const HeadingComponent = ()=> {
-  let addition = 10 + 100;
-  
-  return (<div id='parent'>
-            <div id='child'>
-              <h1 id="heading">{number} React using JSX using functional based component</h1>
-              {addition}
-              {console.log("Hello there, this is from react component")}
-            </div>
-          </div>
-        )
-}
-
-// with no-return keyword
-const AnotherComponent = ()=> (
-    <div>
-      <div id='div-heading'>
-        <h2>THis is heading 2, and we are in another heading</h2>
-        <HeadingComponent /> {/** this is prefered way to render component */}
-        <HeadingComponent></HeadingComponent>
-        <h3> rendering a component like normal function</h3>
-        {HeadingComponent()}
+      <div className="nav-items">
+        <ul>
+          <li> Home</li>
+          <li> About us</li>
+          <li> Contact us</li>
+          <li> Cart</li>
+          <li> Help</li>
+        </ul>
       </div>
     </div>
-)
+  );
+};
 
+const RestaurantCard = () => {
+  return (
+    <div className="res-card" style={{ backgroundColor: "#DEDEDE" }}>
+      <h3>Roast CCx</h3>
+      <h4>4.0 Stars</h4>
+      <h4>40 Mins</h4>
+      <h4>Cafe, Desserts, South Indian</h4>
+      <h4>Banjara Hills</h4>
+    </div>
+  );
+};
+
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="res-container">
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+
+      </div>
+    </div>
+  );
+};
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AnotherComponent />);// object => html element
+root.render(<AppLayout />); // object => html element
